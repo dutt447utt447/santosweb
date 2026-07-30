@@ -1,0 +1,456 @@
+/*==========================================================
+  TECHNOLOGY STACK
+==========================================================*/
+
+.technology-stack{
+
+    position:relative;
+
+    padding:120px 8%;
+
+    background:#FFFFFF;
+
+    overflow:hidden;
+
+}
+
+.technology-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/*==========================================================
+  SECTION HEADER
+==========================================================*/
+
+.technology-header{
+
+    max-width:850px;
+
+    margin:0 auto 90px;
+
+    text-align:center;
+
+}
+
+.technology-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:rgba(93,63,211,.08);
+
+    border:1px solid rgba(93,63,211,.15);
+
+    color:#5D3FD3;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:24px;
+
+}
+
+.technology-header h2{
+
+    font-size:clamp(2.3rem,4vw,3.6rem);
+
+    line-height:1.2;
+
+    font-weight:800;
+
+    color:#10233F;
+
+    margin-bottom:24px;
+
+}
+
+.technology-header h2 span{
+
+    color:#5D3FD3;
+
+}
+
+.technology-header p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#64748B;
+
+}
+/*==========================================================
+  TECHNOLOGY GRID
+==========================================================*/
+
+.technology-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/*==========================================================
+  GRID ITEM
+==========================================================*/
+
+.technology-grid > div{
+
+    display:flex;
+
+}
+
+/*==========================================================
+  RESPONSIVE GRID
+==========================================================*/
+
+@media (max-width:1200px){
+
+    .technology-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .technology-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:24px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .technology-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/*==========================================================
+  TECHNOLOGY CARD
+==========================================================*/
+
+.technology-card{
+
+    position:relative;
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:24px;
+
+    padding:32px;
+
+    overflow:hidden;
+
+    transition:.4s ease;
+
+    box-shadow:
+        0 15px 40px rgba(15,23,42,.06);
+
+}
+
+.technology-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(93,63,211,.25);
+
+    box-shadow:
+        0 25px 60px rgba(93,63,211,.15);
+
+}
+
+/*==========================================================
+  BADGE
+==========================================================*/
+
+.technology-badge{
+
+    position:absolute;
+
+    top:22px;
+
+    right:22px;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    background:#EEF2FF;
+
+    color:#5D3FD3;
+
+    border:1px solid rgba(93,63,211,.15);
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/*==========================================================
+  ICON
+==========================================================*/
+
+.technology-icon{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:22px;
+
+    background:linear-gradient(
+        135deg,
+        #5D3FD3,
+        #7C3AED
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#FFFFFF;
+
+    font-size:38px;
+
+    margin-bottom:24px;
+
+    transition:.35s ease;
+
+}
+
+.technology-card:hover .technology-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+/*==========================================================
+  CATEGORY
+==========================================================*/
+
+.technology-category{
+
+    display:block;
+
+    color:#5D3FD3;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+/*==========================================================
+  TITLE
+==========================================================*/
+
+.technology-title{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#10233F;
+
+    margin-bottom:18px;
+
+}
+
+/*==========================================================
+  DESCRIPTION
+==========================================================*/
+
+.technology-description{
+
+    color:#64748B;
+
+    font-size:15px;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+}
+/*==========================================================
+  FEATURES
+==========================================================*/
+
+.technology-features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.technology-feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#475569;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s ease;
+
+}
+
+.technology-feature:hover{
+
+    transform:translateX(6px);
+
+    color:#5D3FD3;
+
+}
+
+.feature-dot{
+
+    width:10px;
+
+    height:10px;
+
+    min-width:10px;
+
+    border-radius:50%;
+
+    background:#5D3FD3;
+
+    box-shadow:0 0 12px rgba(93,63,211,.35);
+
+}
+
+/*==========================================================
+  RESPONSIVE
+==========================================================*/
+
+@media (max-width:768px){
+
+    .technology-stack{
+
+        padding:90px 6%;
+
+    }
+
+    .technology-header{
+
+        margin-bottom:60px;
+
+    }
+
+    .technology-card{
+
+        padding:26px;
+
+    }
+
+    .technology-icon{
+
+        width:68px;
+
+        height:68px;
+
+        font-size:30px;
+
+        border-radius:18px;
+
+    }
+
+    .technology-title{
+
+        font-size:24px;
+
+    }
+
+    .technology-description{
+
+        font-size:14px;
+
+        line-height:1.8;
+
+    }
+
+    .technology-feature{
+
+        font-size:14px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .technology-card{
+
+        padding:22px;
+
+    }
+
+    .technology-badge{
+
+        position:static;
+
+        display:inline-block;
+
+        margin-bottom:18px;
+
+    }
+
+    .technology-title{
+
+        font-size:22px;
+
+    }
+
+}

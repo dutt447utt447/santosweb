@@ -1,0 +1,673 @@
+/*==================================================
+                ABOUT SECTION
+==================================================*/
+
+.about {
+    position: relative;
+    width: 100%;
+    padding: 120px 8%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 1350px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/*==================================================
+                LEFT
+==================================================*/
+
+.about-left{
+    width:100%;
+}
+
+.about-badge{
+    display:inline-flex;
+    align-items:center;
+
+    padding:10px 22px;
+
+    border:1px solid #dbe4f0;
+    border-radius:50px;
+
+    background:#f8faff;
+
+    color:#4F46E5;
+
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    margin-bottom:24px;
+}
+
+.about-title{
+
+    font-size:clamp(2.7rem,5vw,4rem);
+
+    font-weight:700;
+
+    line-height:1.18;
+
+    color:#0f172a;
+
+    margin-bottom:28px;
+
+    letter-spacing:-1px;
+
+}
+
+.about-title span{
+  color: #5B4BFF; 
+}
+
+.about-text{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#64748B;
+
+    margin-bottom:20px;
+
+    max-width:700px;
+
+}
+
+/*==================================================
+                FEATURE LIST
+==================================================*/
+
+.about-list{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px 30px;
+
+}
+
+.list-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.list-item svg{
+
+    color:#4F46E5;
+
+    font-size:18px;
+
+}
+
+.list-item span{
+
+    font-size:16px;
+
+    font-weight:500;
+
+    color:#1E293B;
+
+}
+
+/*==================================================
+                BUTTON
+==================================================*/
+
+.about-btn{
+
+    margin-top:45px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 28px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#4F46E5;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.about-btn svg{
+
+    transition:.35s;
+
+}
+/*==================================================
+                RIGHT SIDE
+==================================================*/
+
+.about-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*==================================================
+                MISSION CARD
+==================================================*/
+
+.mission-card{
+
+    position:relative;
+
+    width:100%;
+    max-width:460px;
+
+    background:#fff;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 20px 45px rgba(15,23,42,.06);
+
+    transition:.45s ease;
+
+}
+
+/* Top Accent */
+
+.mission-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #4F46E5,
+        #7C3AED
+    );
+
+}
+
+/*==================================================
+                HEADER
+==================================================*/
+
+.mission-header{
+
+    padding:35px;
+
+}
+
+.mission-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    background:#EEF2FF;
+
+    border-radius:30px;
+
+    color:#4F46E5;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:22px;
+
+}
+
+.mission-header h3{
+
+    font-size:2rem;
+
+    line-height:1.35;
+
+    color:#0F172A;
+
+    font-weight:700;
+
+}
+
+/*==================================================
+                GRID
+==================================================*/
+
+.mission-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/*==================================================
+                ITEM
+==================================================*/
+
+.mission-item{
+
+    display:flex;
+
+    gap:18px;
+
+    padding:25px 35px;
+
+    border-top:1px solid #EEF2F7;
+
+    transition:.35s;
+
+}
+
+.mission-icon{
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:16px;
+
+    background:#F8FAFC;
+
+    color:#4F46E5;
+
+    font-size:20px;
+
+    flex-shrink:0;
+
+    transition:.35s;
+
+}
+
+.mission-content{
+
+    flex:1;
+
+}
+
+.mission-content h4{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#0F172A;
+
+    margin-bottom:8px;
+
+}
+
+.mission-content p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    color:#64748B;
+
+}
+
+/*==================================================
+                FOOTER
+==================================================*/
+
+.mission-footer{
+
+    padding:18px;
+
+    text-align:center;
+
+    background:#F8FAFC;
+
+    border-top:1px solid #E2E8F0;
+
+}
+
+.mission-footer span{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    color:#334155;
+
+}
+/*==================================================
+                HOVER EFFECTS
+==================================================*/
+
+.about-badge,
+.about-btn,
+.list-item,
+.mission-card,
+.mission-item,
+.mission-icon{
+    transition:all .35s ease;
+}
+
+/* Badge */
+
+.about-badge:hover{
+
+    background:#4F46E5;
+    color:#fff;
+    border-color:#4F46E5;
+
+    transform:translateY(-2px);
+
+}
+
+/*==================================================
+                FEATURE LIST
+==================================================*/
+
+.list-item{
+
+    padding:12px 15px;
+
+    border-radius:14px;
+
+}
+
+.list-item:hover{
+
+    background:#F8FAFC;
+
+    transform:translateX(8px);
+
+}
+
+.list-item:hover svg{
+
+    transform:scale(1.15);
+
+    color:#3730A3;
+
+}
+
+/*==================================================
+                BUTTON
+==================================================*/
+
+.about-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(79,70,229,.25);
+
+}
+
+.about-btn:hover svg{
+
+    transform:translateX(6px);
+
+}
+
+/*==================================================
+                MISSION CARD
+==================================================*/
+
+.mission-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 28px 60px rgba(15,23,42,.12);
+
+}
+
+.mission-item:hover{
+
+    background:#FAFBFF;
+
+}
+
+.mission-item:hover .mission-icon{
+
+    background:#4F46E5;
+
+    color:#fff;
+
+    transform:rotate(-8deg);
+
+}
+
+.mission-item:hover h4{
+
+    color:#4F46E5;
+
+}
+
+/*==================================================
+                SUBTLE BACKGROUND SHAPES
+==================================================*/
+
+.about::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+    height:380px;
+
+    top:-190px;
+    right:-120px;
+
+    border-radius:50%;
+
+    background:rgba(79,70,229,.03);
+
+    pointer-events:none;
+
+}
+
+.about::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    left:-100px;
+    bottom:-120px;
+
+    border-radius:50%;
+
+    background:rgba(79,70,229,.025);
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:1100px){
+
+.about-container{
+
+    grid-template-columns:1fr;
+
+    gap:70px;
+
+}
+
+.about-right{
+
+    justify-content:flex-start;
+
+}
+
+.mission-card{
+
+    max-width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about{
+
+    padding:90px 6%;
+
+}
+
+.about-title{
+
+    font-size:2.4rem;
+
+}
+
+.about-text{
+
+    font-size:16px;
+
+}
+
+.about-list{
+
+    grid-template-columns:1fr;
+
+}
+
+.mission-header{
+
+    padding:28px;
+
+}
+
+.mission-item{
+
+    padding:22px 28px;
+
+}
+
+.mission-header h3{
+
+    font-size:1.7rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.about{
+
+    padding:80px 20px;
+
+}
+
+.about-title{
+
+    font-size:2rem;
+
+}
+
+.about-badge{
+
+    font-size:12px;
+
+}
+
+.about-btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.mission-icon{
+
+    width:46px;
+    height:46px;
+
+    font-size:18px;
+
+}
+
+.mission-content h4{
+
+    font-size:16px;
+
+}
+
+.mission-content p{
+
+    font-size:14px;
+
+}
+
+}
+
+/*==================================================
+            REDUCED MOTION
+==================================================*/
+
+@media (prefers-reduced-motion: reduce){
+
+*,
+*::before,
+*::after{
+
+    animation:none !important;
+    transition:none !important;
+    scroll-behavior:auto !important;
+
+}
+
+}

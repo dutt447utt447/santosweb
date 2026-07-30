@@ -1,0 +1,276 @@
+/* ==========================
+   Quick Stats Section
+========================== */
+
+.quickstats-section {
+  width: 100%;
+  padding: 100px 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fafc 100%
+  );
+}
+
+.quickstats-container {
+  width: min(90%, 1300px);
+  margin: 0 auto;
+}
+/* ==========================
+   Section Header
+========================== */
+
+.quickstats-header {
+  max-width: 850px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.quickstats-badge {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.08);
+  color: #7c3aed;
+  border: 1px solid rgba(124, 58, 237, 0.18);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.quickstats-title {
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111827;
+  margin-bottom: 22px;
+}
+
+.quickstats-title span {
+  color: #7c3aed;
+}
+
+.quickstats-description {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #6b7280;
+  max-width: 760px;
+  margin: 0 auto;
+}
+/* ==========================
+   Quick Stats Grid
+========================== */
+
+.quickstats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Large Tablet */
+@media (max-width: 1024px) {
+  .quickstats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .quickstats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/* ==========================
+   Quick Stats Card
+========================== */
+
+.quickstats-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 35px 30px;
+  text-align: center;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  height: 100%;
+}
+
+.quickstats-card:hover {
+  transform: translateY(-10px);
+  border-color: #7c3aed;
+  box-shadow: 0 20px 45px rgba(124, 58, 237, 0.18);
+}
+
+.quickstats-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 2rem;
+  transition: all 0.35s ease;
+}
+
+.quickstats-card:hover .quickstats-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+.quickstats-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.quickstats-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.quickstats-card-description {
+  font-size: 0.98rem;
+  color: #6b7280;
+  line-height: 1.8;
+}
+/* ==========================
+   Responsive Design
+========================== */
+
+@media (max-width: 1024px) {
+  .quickstats-section {
+    padding: 80px 0;
+  }
+
+  .quickstats-header {
+    margin-bottom: 60px;
+  }
+
+  .quickstats-title {
+    font-size: 2.8rem;
+  }
+
+  .quickstats-description {
+    font-size: 1rem;
+    max-width: 650px;
+  }
+
+  .quickstats-card {
+    padding: 30px 25px;
+  }
+
+  .quickstats-icon {
+    width: 68px;
+    height: 68px;
+    font-size: 1.8rem;
+  }
+
+  .quickstats-value {
+    font-size: 2rem;
+  }
+
+  .quickstats-card-title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .quickstats-section {
+    padding: 70px 0;
+  }
+
+  .quickstats-header {
+    margin-bottom: 50px;
+  }
+
+  .quickstats-badge {
+    font-size: 0.75rem;
+    padding: 8px 18px;
+    letter-spacing: 1px;
+  }
+
+  .quickstats-title {
+    font-size: 2.2rem;
+  }
+
+  .quickstats-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .quickstats-card {
+    padding: 28px 22px;
+  }
+
+  .quickstats-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  .quickstats-value {
+    font-size: 1.8rem;
+  }
+
+  .quickstats-card-title {
+    font-size: 1.1rem;
+  }
+
+  .quickstats-card-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .quickstats-section {
+    padding: 60px 0;
+  }
+
+  .quickstats-container {
+    width: 92%;
+  }
+
+  .quickstats-title {
+    font-size: 1.9rem;
+  }
+
+  .quickstats-description {
+    font-size: 0.9rem;
+  }
+
+  .quickstats-card {
+    border-radius: 18px;
+    padding: 24px 20px;
+  }
+
+  .quickstats-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 1.5rem;
+  }
+
+  .quickstats-value {
+    font-size: 1.6rem;
+  }
+
+  .quickstats-card-title {
+    font-size: 1rem;
+  }
+
+  .quickstats-card-description {
+    font-size: 0.9rem;
+  }
+}

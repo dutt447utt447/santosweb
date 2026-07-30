@@ -1,0 +1,344 @@
+/* ==========================================
+   Featured In Section
+========================================== */
+
+.featured-section {
+  width: 100%;
+  padding: 110px 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fafc 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-container {
+  width: min(90%, 1300px);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================
+   Background Effects
+========================================== */
+
+.featured-section::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  left: -180px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.08);
+  filter: blur(120px);
+}
+
+.featured-section::after {
+  content: "";
+  position: absolute;
+  right: -180px;
+  bottom: -180px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.08);
+  filter: blur(120px);
+}
+/* ==========================================
+   Section Header
+========================================== */
+
+.featured-header {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  color: #7c3aed;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.featured-title {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.featured-title span {
+  color: #7c3aed;
+}
+
+.featured-description {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #6b7280;
+}
+/* ==========================================
+   References Grid
+========================================== */
+
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+/* ==========================================
+   Reference Card
+========================================== */
+
+.reference-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.reference-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 58, 237, 0.25);
+  box-shadow: 0 25px 55px rgba(124, 58, 237, 0.14);
+}
+
+/* ==========================================
+   Icon
+========================================== */
+
+.reference-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  background: rgba(124, 58, 237, 0.08);
+  color: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 22px;
+  transition: all 0.35s ease;
+}
+
+.reference-card:hover .reference-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+/* ==========================================
+   Content
+========================================== */
+
+.reference-source {
+  display: inline-block;
+  color: #7c3aed;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reference-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.reference-card p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  flex: 1;
+}
+/* ==========================================
+   Read Article Button
+========================================== */
+
+.reference-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #7c3aed;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.35s ease;
+}
+
+.reference-btn svg {
+  font-size: 0.9rem;
+  transition: transform 0.35s ease;
+}
+
+.reference-btn:hover {
+  background: #6d28d9;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(124, 58, 237, 0.25);
+}
+
+.reference-btn:hover svg {
+  transform: translateX(6px);
+}
+
+/* ==========================================
+   Footer Note
+========================================== */
+
+.references-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+}
+
+.references-footer p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+/* ==========================================
+   Responsive Design
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .references-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .featured-section {
+    padding: 90px 0;
+  }
+
+  .featured-header {
+    margin-bottom: 60px;
+  }
+
+  .featured-title {
+    font-size: 3rem;
+  }
+
+  .reference-card {
+    padding: 28px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .references-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-title {
+    font-size: 2.4rem;
+  }
+
+  .featured-description {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .reference-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .reference-card p {
+    font-size: 0.95rem;
+  }
+
+  .reference-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .featured-section {
+    padding: 75px 0;
+  }
+
+  .featured-header {
+    margin-bottom: 50px;
+  }
+
+  .featured-title {
+    font-size: 2rem;
+  }
+
+  .featured-badge {
+    font-size: 0.75rem;
+    padding: 8px 18px;
+  }
+
+  .featured-description {
+    font-size: 0.95rem;
+  }
+
+  .reference-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .reference-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .reference-source {
+    font-size: 0.8rem;
+  }
+
+  .reference-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .reference-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .references-footer p {
+    font-size: 0.95rem;
+  }
+
+}
