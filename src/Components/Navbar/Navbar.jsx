@@ -26,7 +26,7 @@ export default function Navbar() {
       logoSrc={logo}
       navLinks={navLinks}
       projectTitle="SANTOS"
-      projectSubtitle="System for Automated Transparent Online Transfers"
+      projectSubtitle="System For Annual Transfer Over Software"
     />
   );
 }

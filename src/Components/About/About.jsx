@@ -60,7 +60,7 @@ export default function About() {
           </h2>
 
           <p className="about-text">
-            SANTOS (System for Annual Transfer Operating System) is an
+            SANTOS (System for Annual Transfer Over Software) is an
             enterprise platform developed for CRPF to modernize, automate and
             simplify the annual transfer process through secure, transparent and
             policy-based digital workflows.

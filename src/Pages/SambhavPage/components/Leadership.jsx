@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import crpfLeadershipImage from "../../../assets/sambhav/images/CRPF.jpeg";
+import crpfLeadershipImage from "../../../assets/sambhav/images/CRPF.png";
 import sambhavLogo from "../../../assets/sambhav/images/logo.png";
 import sunilDuttImage from "../../../assets/sambhav/images/SunilDuttImage.webp";
 import vitulKumarImage from "../../../assets/sambhav/images/VitulKumar.webp";

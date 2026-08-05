@@ -9,7 +9,7 @@ import Technology from "./Components/Technology/Technology";
 import EngineeringScale from "./Components/EngineeringScale/EngineeringScale";
 
 import Leadership from "./Components/Leadership/Leadership";
-import QuickStats from "./Components/QuickStats/QuickStats";
+
 import Achievements from "./Components/Achievements/Achievements";
 import FeaturedIn from "./Components/FeaturedIn/FeaturedIn";
 import Footer from "./Components/Footer/Footer";
@@ -49,7 +49,7 @@ function SantosHome() {
       <Leadership />
       <Technology />
       <EngineeringScale />
-      <QuickStats />
+
       <Achievements />
       <FeaturedIn />
       <Footer />

@@ -327,7 +327,18 @@
   margin-top: 24px;
 }
 
-.info-metric,
+.info-metric {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 126px;
+  padding: 22px 20px;
+  border: 1px solid #dbe5f0;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(6, 27, 58, 0.04);
+}
+
 .person-card {
   display: grid;
   min-height: 126px;
@@ -395,7 +406,14 @@
   text-transform: uppercase;
 }
 
-.info-metric strong,
+.info-metric strong {
+  display: block;
+  color: var(--info-blue, #063b78);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
 .person-card strong {
   display: block;
   color: var(--info-ink);
@@ -417,10 +435,14 @@
   position: relative;
   display: grid;
   grid-template-columns: 154px minmax(0, 1fr);
-  gap: 20px;
+  grid-template-rows: auto auto;
+  gap: 8px 20px;
   padding: 20px;
   border-bottom: 1px solid #e4ebf4;
   background: #ffffff;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .timeline-card:last-child {
@@ -432,7 +454,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 154px;
+  left: 174px;
   width: 1px;
   background: #e4ebf4;
 }
@@ -441,18 +463,29 @@
   position: relative;
   margin: 0;
   color: var(--info-blue);
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  padding-top: 2px;
 }
 
 .timeline-card h3 {
-  margin: 0 0 8px;
+  margin: 0;
   color: var(--info-ink);
   font-size: 1.1rem;
   font-weight: 850;
   line-height: 1.32;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .timeline-card p {
   margin: 0;
+  grid-column: 2;
+  grid-row: 2;
+  color: #667992;
+  font-size: 0.92rem;
+  line-height: 1.65;
 }
 
 .info-table-wrap {

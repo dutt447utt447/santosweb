@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import {
   FaArrowRight,
   FaPlay,
-  FaDatabase,
-  FaUsers,
+  FaShieldAlt,
+  FaGlobe,
 } from "react-icons/fa";
 import { HiOutlineServerStack } from "react-icons/hi2";
 import { BsCodeSlash } from "react-icons/bs";
@@ -55,7 +55,7 @@ const Hero = () => {
               <FaArrowRight />
             </a>
 
-            <a className="secondary-btn" href="#journey">
+            <a className="secondary-btn" href="/development-team">
               <FaPlay />
               Development Journey
             </a>
@@ -90,27 +90,27 @@ const Hero = () => {
               <div className="dashboard-grid">
 
                 <div className="mini-card">
-                  <FaUsers />
-                  <h4>25K+</h4>
-                  <span>Concurrent Users</span>
+                  <FaGlobe />
+                  <h4>Enterprise</h4>
+                  <span>Scale Platform</span>
                 </div>
 
                 <div className="mini-card">
-                  <FaDatabase />
-                  <h4>281</h4>
-                  <span>Database Tables</span>
+                  <FaShieldAlt />
+                  <h4>Secure</h4>
+                  <span>Architecture</span>
                 </div>
 
                 <div className="mini-card">
                   <HiOutlineServerStack />
-                  <h4>505</h4>
-                  <span>Stored Procedures</span>
+                  <h4>Robust</h4>
+                  <span>Backend Services</span>
                 </div>
 
                 <div className="mini-card">
                   <BsCodeSlash />
-                  <h4>1.99M</h4>
-                  <span>Lines of Code</span>
+                  <h4>Modern</h4>
+                  <span>Tech Stack</span>
                 </div>
 
               </div>
@@ -122,30 +122,7 @@ const Hero = () => {
 
       </div>
 
-      {/* Bottom Stats */}
-      <div className="hero-stats">
 
-        <div className="stat-box">
-          <h2>25K+</h2>
-          <p>Concurrent Users</p>
-        </div>
-
-        <div className="stat-box">
-          <h2>281</h2>
-          <p>Database Tables</p>
-        </div>
-
-        <div className="stat-box">
-          <h2>505</h2>
-          <p>Stored Procedures</p>
-        </div>
-
-        <div className="stat-box">
-          <h2>2022</h2>
-          <p>Official Launch</p>
-        </div>
-
-      </div>
 
     </section>
   );

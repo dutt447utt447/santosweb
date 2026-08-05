@@ -641,13 +641,15 @@ diplay:none;
 
 .mini-card h4{
 
-    font-size:26px;
+    font-size:20px;
 
-    color:#10233F;
+    color:#063b78;
 
     font-weight:800;
 
     margin-bottom:6px;
+
+    line-height:1.2;
 
 }
 
@@ -815,18 +817,6 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
-.hero-watermark{
-
-width:420px;
-
-right:50%;
-
-top:65%;
-
-transform:translate(50%,-50%);
-
-}
-
 }
 
 @media(max-height:820px) and (min-width:1201px){
@@ -914,7 +904,7 @@ margin-bottom:10px;
 
 .mini-card h4{
 
-font-size:24px;
+font-size:18px;
 
 }
 
@@ -1011,12 +1001,6 @@ grid-template-columns:1fr;
 .hero-stats{
 
 grid-template-columns:1fr;
-
-}
-
-.hero-watermark{
-
-display:none;
 
 }
 

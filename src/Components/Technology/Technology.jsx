@@ -1,65 +1,61 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaReact,
-  FaJava,
-  FaDocker,
-  FaAws,
+  FaGlobe,
+  FaServer,
+  FaDatabase,
+  FaShieldAlt,
+  FaCloud,
+  FaCubes,
+  FaChartLine,
   FaChartBar,
 } from "react-icons/fa";
-
-import {
-  SiSpringboot,
-  SiPostgresql,
-  SiGrafana,
-  
-} from "react-icons/si";
 
 import "./Technology.css";
 
 const technologies = [
   {
-    icon: <FaReact />,
-    title: "React",
-    category: "Frontend Framework",
+    icon: <FaGlobe />,
+    title: "Modern UI Framework",
+    category: "Frontend",
     badge: "High Performance",
     description:
-      "Provides a fast, responsive and interactive user interface using reusable components and Virtual DOM.",
+      "Delivers a fast, responsive and interactive user experience with modern component-based architecture.",
 
     features: [
       "Component Based",
-      "Virtual DOM",
-      "Responsive UI",
-      "High Performance",
+      "Responsive Design",
+      "Dynamic UI",
+      "Optimized Rendering",
     ],
   },
 
   {
-    icon: <SiSpringboot />,
-    title: "Spring Boot",
-    category: "Backend Framework",
-    badge: "Enterprise Secure",
+    icon: <FaServer />,
+    title: "Enterprise Backend",
+    category: "Backend Services",
+    badge: "Enterprise Grade",
     description:
-      "Handles business logic, REST APIs and enterprise workflows with scalability and reliability.",
+      "Manages business logic, APIs and enterprise workflows with robust scalability and reliability.",
 
     features: [
-      "REST APIs",
-      "Secure Services",
+      "RESTful APIs",
+      "Service Oriented",
       "Business Logic",
       "Scalable Architecture",
     ],
   },
 
   {
-    icon: <SiPostgresql />,
-    title: "PostgreSQL",
-    category: "Database",
+    icon: <FaDatabase />,
+    title: "Relational Database",
+    category: "Data Management",
     badge: "Reliable Storage",
     description:
-      "Stores enterprise data securely with optimized queries, high integrity and ACID compliance.",
+      "Manages enterprise data securely with structured storage, high integrity and transactional compliance.",
 
     features: [
-      "ACID Compliance",
+      "Data Integrity",
       "Optimized Queries",
       "Secure Storage",
       "High Reliability",
@@ -67,15 +63,15 @@ const technologies = [
   },
 
   {
-    icon: <FaJava />,
-    title: "JWT Security",
-    category: "Authentication",
+    icon: <FaShieldAlt />,
+    title: "Secure Authentication",
+    category: "Security Layer",
     badge: "Protected Access",
     description:
-      "Implements secure authentication and authorization ensuring trusted access across the platform.",
+      "Provides secure authentication and authorization ensuring trusted access across the platform.",
 
     features: [
-      "JWT Tokens",
+      "Token Based Auth",
       "Authorization",
       "Role Based Access",
       "Secure Login",
@@ -83,12 +79,12 @@ const technologies = [
   },
 
   {
-    icon: <FaAws />,
-    title: "AWS Cloud",
-    category: "Infrastructure",
+    icon: <FaCloud />,
+    title: "Cloud Infrastructure",
+    category: "Hosting & Infra",
     badge: "Cloud Native",
     description:
-      "Provides scalable cloud infrastructure with high availability and enterprise deployment capabilities.",
+      "Offers scalable cloud infrastructure with high availability and enterprise deployment capabilities.",
 
     features: [
       "Cloud Hosting",
@@ -99,28 +95,28 @@ const technologies = [
   },
 
   {
-    icon: <FaDocker />,
-    title: "Docker",
-    category: "Containerization",
+    icon: <FaCubes />,
+    title: "Container Platform",
+    category: "Deployment",
     badge: "Production Ready",
     description:
-      "Ensures consistent deployments across development, testing and production environments.",
+      "Enables consistent deployments across development, testing and production environments.",
 
     features: [
-      "Containers",
-      "Easy Deployment",
-      "Isolation",
-      "Scalable",
+      "Containerized Apps",
+      "Automated Deployment",
+      "Environment Isolation",
+      "Scalable Infra",
     ],
   },
 
   {
-    icon: <SiGrafana />,
-    title: "Grafana",
-    category: "Monitoring",
+    icon: <FaChartLine />,
+    title: "System Monitoring",
+    category: "Observability",
     badge: "Live Monitoring",
     description:
-      "Tracks infrastructure, servers and services using real-time dashboards and intelligent alerts.",
+      "Tracks infrastructure and services using real-time dashboards and intelligent alerting systems.",
 
     features: [
       "Live Metrics",
@@ -130,21 +126,21 @@ const technologies = [
     ],
   },
 
- {
-  icon: <FaChartBar />,
-  title: "Power BI",
-  category: "Business Intelligence",
-  badge: "Data Driven",
-  description:
-    "Transforms operational data into executive dashboards, reports and actionable business insights.",
+  {
+    icon: <FaChartBar />,
+    title: "Analytics Platform",
+    category: "Business Intelligence",
+    badge: "Data Driven",
+    description:
+      "Transforms operational data into executive dashboards, reports and actionable business insights.",
 
-  features: [
-    "Analytics",
-    "Executive Reports",
-    "KPIs",
-    "Visualization",
-  ],
-},
+    features: [
+      "Analytics",
+      "Executive Reports",
+      "KPIs",
+      "Visualization",
+    ],
+  },
 ];
 function Technology() {
   return (

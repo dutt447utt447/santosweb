@@ -8,8 +8,8 @@ export const santosPages = {
       "SANTOS was launched in 2022 as a policy-driven transfer management platform for the Central Reserve Police Force. It combines a secure web portal, mobile-facing services integrated with SAMBHAV, transfer policy logic, preference collection, vacancy mapping, and large-scale data processing into one operational ecosystem.",
     heroFacts: [
       { label: "Launched", value: "2022" },
-      { label: "Database", value: "Oracle 19c" },
-      { label: "Max concurrency", value: "25,000" },
+      { label: "Database", value: "Enterprise RDBMS" },
+      { label: "Max concurrency", value: "20,000+" },
       { label: "Recognition", value: "Champion IT Project 2024" },
     ],
     highlights: [
@@ -56,8 +56,8 @@ export const santosPages = {
         table: {
           columns: ["Year", "Personnel affected", "Choices filled", "Special cases", "Retention cases", "Transfers processed"],
           rows: [
-            ["2022", "59,510", "59,482", "1,004", "4,802", "59,557"],
-            ["2023", "52,263", "52,162", "1,733", "4,472", "52,263"],
+            ["2022", "~59,000", "~59,000", "~1,000", "~4,800", "~59,000"],
+            ["2023", "~52,000", "~52,000", "~1,700", "~4,400", "~52,000"],
           ],
         },
       },
@@ -91,18 +91,18 @@ export const santosPages = {
     lead:
       "SANTOS is not a generic commercial transfer product. It was shaped by CRPF's own operational realities, transfer policy requirements, cadre diversity, and high-volume annual processing needs. The development journey shows a rapid transition from early prototype work to a scalable .NET Core MVC and Oracle-backed enterprise system.",
     heroFacts: [
-      { label: "First code", value: "05 Jan 2022" },
-      { label: "MVC migration", value: "29 Jan 2022" },
-      { label: "Database work", value: "07 Feb 2022" },
-      { label: "Lines of code", value: "1,991,867" },
+      { label: "First code", value: "Jan 2022" },
+      { label: "MVC migration", value: "Jan 2022" },
+      { label: "Database work", value: "Feb 2022" },
+      { label: "Lines of code", value: "1.9M+" },
     ],
     highlights: [
-      "Initial code was written on ASP.NET Web Forms on 05 January 2022.",
-      "The project moved to .NET Core framework with C# MVC on 29 January 2022.",
-      "Database creation began on 07 February 2022 with 13 initial tables and a flow diagram.",
-      "The system has grown to 281 database tables, 505 procedures, and 55 functions.",
-      "Oracle 19c is used as the database platform.",
-      "IIS serves the web portal, while Node-Express supports mobile app APIs.",
+      "Initial code was written on ASP.NET Web Forms in January 2022.",
+      "The project moved to .NET Core framework with C# MVC later in January 2022.",
+      "Database creation began in February 2022 with initial tables and a flow diagram.",
+      "The system has grown to 200+ database tables, 500+ procedures, and 50+ functions.",
+      "An enterprise relational database is used as the database platform.",
+      "Web server handles the portal, while separate API nodes support mobile app services.",
     ],
     sections: [
       {
@@ -117,7 +117,6 @@ export const santosPages = {
           { role: "DC/IT", name: "Vivek Kumar" },
           { role: "AC/IT", name: "Ashish Rawat" },
           { role: "ASI/Tech", name: "Sunil Dutt" },
-          { role: "Programming Event", name: "ASI/Tech Ashok Yadav" },
         ],
       },
       {
@@ -160,12 +159,12 @@ export const santosPages = {
           "The choice filling phase was supported by multiple Node-Express API nodes and an active or standby web portal arrangement for continuity.",
         ],
         metrics: [
-          { label: "Database tables", value: "281" },
-          { label: "Stored procedures", value: "505" },
-          { label: "Functions", value: "55" },
-          { label: "Max concurrency", value: "25,000" },
-          { label: "Transfer cycle 2022", value: "59,557 processed" },
-          { label: "Transfer cycle 2023", value: "52,263 processed" },
+          { label: "Database tables", value: "200+" },
+          { label: "Stored procedures", value: "500+" },
+          { label: "Functions", value: "50+" },
+          { label: "Max concurrency", value: "20,000+" },
+          { label: "Transfer cycle 2022", value: "50,000+ processed" },
+          { label: "Transfer cycle 2023", value: "50,000+ processed" },
         ],
       },
       {
@@ -256,8 +255,8 @@ export const santosPages = {
         table: {
           columns: ["Year", "Special cases", "Retention cases", "Special approved", "Retention approved"],
           rows: [
-            ["2022", "1,004", "4,802", "670", "1,389"],
-            ["2023", "1,733", "4,472", "As per competent authority", "As per competent authority"],
+            ["2022", "~1,000", "~4,800", "~670", "~1,400"],
+            ["2023", "~1,700", "~4,400", "As per competent authority", "As per competent authority"],
           ],
         },
       },
@@ -344,7 +343,6 @@ export const santosPages = {
     sourceLinks: [
       { label: "Official CRPF SANTOS page", url: "https://crpf.gov.in/SANTOS" },
       { label: "Official CRPF website", url: "https://crpf.gov.in/Index" },
-      { label: "CRPF WebVPN", url: "https://webvpn.crpf.gov.in" },
     ],
   },
 };
