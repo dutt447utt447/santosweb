@@ -4,17 +4,15 @@ import { motion } from "framer-motion";
 import {
   FaTrophy,
   FaMedal,
-  FaUsers,
   FaAward,
   FaMapMarkerAlt,
   FaCalendarAlt,
-  FaUserTie,
 } from "react-icons/fa";
 
-import trophy1 from "../../assets/images/trophy1.png";
-import trophy2 from "../../assets/images/trophy2.png";
-import trophy3 from "../../assets/images/trophy3.png";
-import trophy4 from "../../assets/images/trophy4.png";
+import trophy1 from "../../assets/santos/images/trophy1.png";
+import trophy2 from "../../assets/santos/images/trophy2.png";
+import trophy3 from "../../assets/santos/images/trophy3.png";
+import trophy4 from "../../assets/santos/images/trophy4.png";
 
 import "./Achievements.css";
 function Achievements() {
@@ -51,29 +49,6 @@ function Achievements() {
       icon: <FaCalendarAlt />,
       title: "Event",
       value: "12-16 February 2024",
-    },
-  ];
-
-  const leadership = [
-    {
-      role: "Project Leadership",
-      name: "IPS ADG Vitul Kumar",
-    },
-    {
-      role: "DIG/IT",
-      name: "Vijay Kumar",
-    },
-    {
-      role: "DC/IT",
-      name: "Vivek Kumar",
-    },
-    {
-      role: "AC/IT",
-      name: "Ashish Rawat",
-    },
-    {
-      role: "ASI/Tech",
-      name: "Sunil Dutt",
     },
   ];
 
@@ -187,43 +162,6 @@ function Achievements() {
           ))}
 
         </div>
-
-        {/* Leadership & Core Team */}
-
-        <motion.div
-          className="leadership-section"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-
-          <div className="achievement-leadership-header">
-
-            <FaUserTie className="leader-icon" />
-
-            <h3>Project Leadership & Core Development Team</h3>
-
-          </div>
-
-          <div className="achievement-leadership-grid">
-
-            {leadership.map((member, index) => (
-              <div
-                key={index}
-                className="leader-card"
-              >
-
-                <span>{member.role}</span>
-
-                <h4>{member.name}</h4>
-
-              </div>
-            ))}
-
-          </div>
-
-        </motion.div>
 
         {/* Bronze Medal Recognition */}
 

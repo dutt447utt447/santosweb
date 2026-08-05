@@ -10,7 +10,7 @@ import {
 import { HiOutlineServerStack } from "react-icons/hi2";
 import { BsCodeSlash } from "react-icons/bs";
 
-import santosLogo from "../../assets/logos/Santos_logo.png";
+import santosLogo from "../../assets/santos/logos/Santos_logo.png";
 
 const Hero = () => {
   return (
@@ -145,11 +145,6 @@ const Hero = () => {
           <p>Official Launch</p>
         </div>
 
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="scroll-indicator">
-        <span></span>
       </div>
 
     </section>

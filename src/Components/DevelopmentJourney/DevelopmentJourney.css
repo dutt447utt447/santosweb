@@ -30,9 +30,9 @@
     justify-content:center;
     padding:10px 22px;
     border-radius:999px;
-    background:rgba(93,63,211,.08);
-    border:1px solid rgba(93,63,211,.15);
-    color:#5D3FD3;
+    background:rgba(6, 59, 120,.08);
+    border:1px solid rgba(6, 59, 120,.15);
+    color:#063b78;
     font-size:14px;
     font-weight:700;
     letter-spacing:0;
@@ -49,7 +49,7 @@
 }
 
 .journey-header h2 span{
-    color:#5D3FD3;
+    color:#063b78;
 }
 
 .journey-header p{
@@ -65,7 +65,7 @@
 ==========================================================*/
 
 .journey-timeline{
-    --journey-dash:rgba(93,63,211,.38);
+    --journey-dash:rgba(6, 59, 120,.38);
     --journey-line:11px;
     --journey-gap:11px;
     position:relative;
@@ -95,7 +95,7 @@
     position:absolute;
     left:50%;
     transform:translateX(-50%);
-    background:#5D3FD3;
+    background:#063b78;
 }
 
 .timeline-line::before{
@@ -113,7 +113,7 @@
     border-left:5px solid transparent;
     border-right:5px solid transparent;
     border-bottom:0;
-    border-top:8px solid #5D3FD3;
+    border-top:8px solid #063b78;
 }
 
 .timeline-item{
@@ -148,7 +148,7 @@
     width:7px;
     height:7px;
     border-radius:50%;
-    background:#5D3FD3;
+    background:#063b78;
     transform:translate(-50%,-50%);
     z-index:3;
 }
@@ -160,13 +160,13 @@
     height:38px;
     border-radius:50%;
     background:#FFFFFF;
-    border:1px solid rgba(93,63,211,.18);
-    color:#5D3FD3;
+    border:1px solid rgba(6, 59, 120,.18);
+    color:#063b78;
     display:flex;
     align-items:center;
     justify-content:center;
     font-size:16px;
-    box-shadow:0 12px 26px rgba(93,63,211,.16);
+    box-shadow:0 12px 26px rgba(6, 59, 120,.16);
     transform:translateY(-50%);
     z-index:4;
 }
@@ -238,7 +238,7 @@
 }
 
 .journey-step{
-    color:#5D3FD3;
+    color:#063b78;
     font-size:13px;
     font-weight:800;
     line-height:1;
@@ -252,9 +252,9 @@
     min-height:26px;
     padding:5px 10px;
     border-radius:999px;
-    background:#EEF2FF;
-    border:1px solid rgba(93,63,211,.16);
-    color:#5D3FD3;
+    background:#edf4fb;
+    border:1px solid rgba(6, 59, 120,.16);
+    color:#063b78;
     font-size:13px;
     font-weight:700;
     line-height:1;

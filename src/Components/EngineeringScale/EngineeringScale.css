@@ -48,11 +48,11 @@
 
     border-radius:50px;
 
-    background:rgba(93,63,211,.08);
+    background:rgba(6, 59, 120,.08);
 
-    border:1px solid rgba(93,63,211,.15);
+    border:1px solid rgba(6, 59, 120,.15);
 
-    color:#5D3FD3;
+    color:#063b78;
 
     font-size:14px;
 
@@ -80,7 +80,7 @@
 
 .engineering-header h2 span{
 
-    color:#5D3FD3;
+    color:#063b78;
 
 }
 
@@ -177,10 +177,10 @@
 
     transform:translateY(-10px);
 
-    border-color:rgba(93,63,211,.25);
+    border-color:rgba(6, 59, 120,.25);
 
     box-shadow:
-        0 25px 60px rgba(93,63,211,.15);
+        0 25px 60px rgba(6, 59, 120,.15);
 
 }
 
@@ -204,8 +204,8 @@
 
     background:linear-gradient(
         135deg,
-        #5D3FD3,
-        #7C3AED
+        #063b78,
+        #0b579f
     );
 
     color:#FFFFFF;
@@ -234,7 +234,7 @@
 
     font-weight:800;
 
-    color:#5D3FD3;
+    color:#063b78;
 
     margin-bottom:12px;
 

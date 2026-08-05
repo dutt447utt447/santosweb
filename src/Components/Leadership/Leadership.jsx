@@ -9,7 +9,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 
-import leader from "../../assets/images/vitul.png";
+import leader from "../../assets/santos/images/vitul.png";
 
 import "./Leadership.css";
 
