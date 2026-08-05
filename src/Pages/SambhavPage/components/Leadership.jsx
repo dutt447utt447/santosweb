@@ -49,10 +49,6 @@ export default function Leadership() {
                 />
               </div>
               <div className="team-card__body">
-                <span className="badge badge--green">
-                  <CheckCircle2 size={15} aria-hidden="true" />
-                  Core Development Team
-                </span>
                 <h3>{member.name}</h3>
                 <strong>{member.role}</strong>
                 {/* <p>

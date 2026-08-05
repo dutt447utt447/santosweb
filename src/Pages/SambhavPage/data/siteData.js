@@ -617,19 +617,19 @@ export const teamMembers = [
   {
     name: "Vitul Kumar",
     role: "IPS ADG",
-    
+  },
+  {
+    name: "Vivek Kumar",
+    role: "DC / IT",
   },
   {
     name: "Ashish Rawat",
     role: "AC / Tech",
-
   },
   {
     name: "Sunil Dutt",
-    role: "ASI /Tech",
-    
+    role: "ASI / Tech",
   },
-  
 ];
 
 export const galleryItems = [
