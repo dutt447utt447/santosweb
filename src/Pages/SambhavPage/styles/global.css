@@ -1364,7 +1364,7 @@ img {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -1403,7 +1403,7 @@ img {
 
 .team-card__body strong {
   display: block;
-  margin-top: 11px;
+  margin-top: 4px;
   color: var(--primary-blue);
 }
 
@@ -2982,9 +2982,9 @@ body {
 
 /* Final stable layout overrides */
 :root {
-  --section-space: 34px;
-  --section-heading-gap: 22px;
-  --section-between-gap: 24px;
+  --section-space: 48px;
+  --section-heading-gap: 28px;
+  --section-between-gap: 32px;
 }
 
 main > .section:not(.hero):not(.stats-section) {
