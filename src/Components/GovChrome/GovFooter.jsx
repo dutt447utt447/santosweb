@@ -2,7 +2,6 @@ import "./GovChrome.css";
 
 const officialLinks = [
   { label: "CRPF Official Website", href: "https://crpf.gov.in/" },
-  { label: "CRPF WebVPN", href: "https://webvpn.crpf.gov.in" },
   { label: "Ministry of Home Affairs", href: "https://www.mha.gov.in/" },
 ];
 

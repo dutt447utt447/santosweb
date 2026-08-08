@@ -95,7 +95,7 @@ function Leadership() {
                 />
 
                 <div className="leader-badge">
-                  Founder
+                  Leadership
                 </div>
               </div>
 
@@ -104,7 +104,7 @@ function Leadership() {
                 <h3>Vitul Kumar</h3>
 
                 <h4>
-                  Founder
+                  Leadership
                 </h4>
 
                 <p>
