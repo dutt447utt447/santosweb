@@ -8,6 +8,7 @@
   --info-soft: #f3f7fc;
   --info-surface: #ffffff;
   min-height: 100vh;
+  overflow-x: hidden;
   background:
     linear-gradient(180deg, #f3f7fc 0, #ffffff 430px, #f6f9fd 100%);
   color: var(--info-ink);
@@ -283,6 +284,10 @@
   font-weight: 900;
 }
 
+.section-copy {
+  min-width: 0;
+}
+
 .section-copy h2 {
   margin: 0 0 16px;
   font-size: clamp(1.5rem, 2.7vw, 2.08rem);
@@ -499,7 +504,7 @@
 
 .info-table {
   width: 100%;
-  min-width: 760px;
+  min-width: 620px;
   border-collapse: collapse;
 }
 
@@ -676,11 +681,15 @@
 
 @media (max-width: 480px) {
   .info-shell {
-    width: calc(100% - 24px);
+    width: calc(100% - 20px);
   }
 
   .info-hero {
     padding-top: 112px;
+  }
+
+  .info-hero .info-shell {
+    gap: 28px;
   }
 
   .info-fact {
@@ -695,21 +704,66 @@
   .highlight-row,
   .info-bullet-list li,
   .source-link-card {
-    padding: 14px;
+    padding: 12px;
+  }
+
+  .source-link-card span {
+    font-size: 0.88rem;
+    word-break: break-word;
+  }
+
+  .info-table {
+    min-width: 520px;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 10px 12px;
+    font-size: 0.82rem;
   }
 
   .person-card {
-    grid-template-columns: 64px minmax(0, 1fr);
-    gap: 14px;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 12px;
+    padding: 14px;
   }
 
   .person-photo {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
   }
 
   .person-photo--placeholder svg {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .info-metric {
+    min-height: 100px;
+    padding: 16px 14px;
+  }
+
+  .info-metric strong {
+    font-size: 1.15rem;
+  }
+
+  .section-copy h2 {
+    font-size: 1.35rem;
+  }
+
+  .source-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-content-stack {
+    padding: 40px 0 48px;
+  }
+
+  .source-band {
+    padding: 38px 0 48px;
+  }
+
+  .overview-card h2 {
+    font-size: 1.2rem;
   }
 }

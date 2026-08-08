@@ -56,8 +56,8 @@ export const santosPages = {
         table: {
           columns: ["Year", "Personnel affected", "Choices filled", "Special cases", "Retention cases", "Transfers processed"],
           rows: [
-            ["2022", "~59,000", "~59,000", "~1,000", "~4,800", "~59,000"],
-            ["2023", "~52,000", "~52,000", "~1,700", "~4,400", "~52,000"],
+            ["2022", "59,000", "59,000", "1,000", "4,800", "59,000"],
+            ["2023", "52,000", "52,000", "1,700", "4,400", "52,000"],
           ],
         },
       },
@@ -255,8 +255,8 @@ export const santosPages = {
         table: {
           columns: ["Year", "Special cases", "Retention cases", "Special approved", "Retention approved"],
           rows: [
-            ["2022", "~1,000", "~4,800", "~670", "~1,400"],
-            ["2023", "~1,700", "~4,400", "As per competent authority", "As per competent authority"],
+            ["2022", "1,004", "4,802", "670", "1,389"],
+            ["2023", "1,733", "4,472", "As per competent authority", "As per competent authority"],
           ],
         },
       },
